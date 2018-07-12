@@ -17,7 +17,7 @@ title: Lambeaus.net
 email: clamberson@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the personal blog of a software engineer from Portland,
-  OR. The struggle is legit real. Also I'm weird.
+  OR. The struggle is legit real.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://lambeaus.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: cllamberson
