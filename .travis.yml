@@ -1,0 +1,15 @@
+language: ruby
+
+rvm:
+  - 2.2
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_6af0b95a5a5e_key -iv $encrypted_6af0b95a5a5e_iv -in admin.enc -out admin -d
+
+script:
+  - bundle exec jekyll build
+
+after_script:
+  - git remote add deploy git@lambeaus.net:blog.git
+  - git config core.sshCommand "ssh -i admin -F /dev/null"
+  - git push deploy master
