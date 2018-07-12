@@ -11,5 +11,5 @@ script:
 
 after_script:
   - git remote add deploy git@lambeaus.net:blog.git
-  - git config core.sshCommand "ssh -i admin -F /dev/null"
+  - git config core.sshCommand "ssh -i admin -F /dev/null -o StrictHostKeyChecking=no"
   - git push deploy master
